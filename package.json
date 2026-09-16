@@ -1,0 +1,15 @@
+{
+  "name": "kidstube",
+  "version": "1.0.0",
+  "private": true,
+  "description": "App estilo YouTube para crianças verem vídeos locais na rede de casa",
+  "scripts": {
+    "install-all": "npm install && npm --prefix server install && npm --prefix client install",
+    "dev": "concurrently -n SERVIDOR,APP -c magenta,cyan \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server run start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

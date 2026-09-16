@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Segoe UI", "Comic Sans MS", "Chalkboard SE", system-ui, sans-serif;
+  background: linear-gradient(180deg, #fdf4ff 0%, #eff6ff 100%);
+  min-height: 100vh;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #d8b4fe;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
