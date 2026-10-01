@@ -106,6 +106,10 @@ export default function WatchPage({ state, refresh }) {
             onPlay={() => {
               lastTime.current = videoRef.current?.currentTime || 0;
             }}
+            onEnded={() => {
+              if (nextVideo) navigate(`/ver/${nextVideo.id}`);
+              else if (allVideos.length > 0) navigate(`/ver/${allVideos[0].id}`);
+            }}
           />
 
           {/* Botões de navegação do vídeo */}
